@@ -1,7 +1,7 @@
 function Food({itemsForMenu}) {
     return(<div className="products">
         {itemsForMenu.map(( element => {
-                const {id, name, serchTerm, price, image} = element;
+                const {id, name, price, image} = element;
                 return(
                     <div className="product-card" key={id}>
                         <img src={image} width="300px" height="400px" alt="food"/>               

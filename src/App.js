@@ -17,17 +17,17 @@ function App() {
         <div className='logo'> 
           <Logo/>
         </div>
-        <div className='container-link'>      
-          <Link to="/home" className='link'>Home</Link>
+        <div className='container-link'> 
+          <Link to="/" className='link'>Home</Link>
           <Link to="/aboutUs" className='link'>About Us</Link>
           <Link to="/contacts" className='link'>Contacts</Link>
         </div>
       </nav>    
 
-      <Routes>       
-        <Route path="/home" element={<Home/>}/>
+      <Routes> 
+        <Route path="/" element={<Home/>}/>
         <Route path="/aboutUs" element={<AboutUs/>}/>
-        <Route path="/contacts" element={<Contacts/>}/>
+        <Route path="/contacts" element={<Contacts/>}/>        
       </Routes>
     </Router>
 }
